@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class RabbitmqConfig {
-    
+
     @Value("${queue.name}")
     private String queueName;
 
