@@ -27,4 +27,9 @@ public class PedidoService {
                "não existe na base de dados"));
     }
 
+    public void excluir(Long id){
+        Pedido pedido = buscarOuFalharPorId(id);
+        pedidoRepository.deleteById(id);
+    }
+
 }
